@@ -1,0 +1,20 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="34" fill="#FFFFFF"/>
+  <rect x="45" y="45" width="810" height="530" rx="26" fill="#F6F1E8" stroke="#202624" stroke-opacity="0.12"/>
+  <text x="90" y="125" fill="#C4552D" font-family="Arial, sans-serif" font-size="22" font-weight="900">FREE CHECKLIST</text>
+  <text x="90" y="188" fill="#202624" font-family="Arial, sans-serif" font-size="54" font-weight="900">10 Website Fixes</text>
+  <text x="90" y="248" fill="#202624" font-family="Arial, sans-serif" font-size="54" font-weight="900">To Increase Leads</text>
+  <g font-family="Arial, sans-serif" font-size="25" font-weight="800" fill="#53605D">
+    <circle cx="108" cy="324" r="13" fill="#E7BD65"/>
+    <text x="138" y="333">Sharper hero offer</text>
+    <circle cx="108" cy="374" r="13" fill="#E7BD65"/>
+    <text x="138" y="383">One-click WhatsApp CTA</text>
+    <circle cx="108" cy="424" r="13" fill="#E7BD65"/>
+    <text x="138" y="433">Proof near every CTA</text>
+    <circle cx="108" cy="474" r="13" fill="#E7BD65"/>
+    <text x="138" y="483">Faster follow-up flow</text>
+  </g>
+  <rect x="590" y="315" width="190" height="170" rx="22" fill="#202624"/>
+  <text x="632" y="388" fill="#E7BD65" font-family="Arial, sans-serif" font-size="54" font-weight="900">RX</text>
+  <text x="625" y="430" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="900">Growth Audit</text>
+</svg>
