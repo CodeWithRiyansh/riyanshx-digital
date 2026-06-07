@@ -11,33 +11,33 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#f6f1e8] px-5 py-8 text-[#202624] md:px-8">
+    <main className="min-h-screen bg-[#F7F8F2] px-5 py-8 text-[#12201C] md:px-8">
       <div className="mx-auto max-w-7xl">
-        <Link href="/" className="text-sm font-black text-[#c4552d]">
+        <Link href="/" className="text-sm font-black text-[#FF6B35]">
           Back to home
         </Link>
         <section className="mt-14 grid gap-10 md:grid-cols-[1fr_0.8fr] md:items-center">
           <div>
-            <p className="text-sm font-black uppercase text-[#c4552d]">
+            <p className="text-sm font-black uppercase text-[#FF6B35]">
               About us
             </p>
             <h1 className="mt-4 text-5xl font-black leading-[0.98] md:text-7xl">
               We are built for businesses that want clearer growth.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#53605d]">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#586A64]">
               RiyanshX Digital focuses on the practical parts of marketing:
               clear offers, fast pages, measurable campaigns, disciplined
               follow-up, and reporting that tells owners what to do next.
             </p>
             <Link
               href="/contact"
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#202624] px-6 py-4 font-black text-white"
+              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#12201C] px-6 py-4 font-black text-white"
             >
               Talk to the team
               <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="rounded-lg bg-[#202624] p-6 text-white">
+          <div className="rounded-lg bg-[#12201C] p-6 text-white">
             {[
               [Target, "Outcome-first strategy"],
               [Zap, "Fast execution cycles"],
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 key={label as string}
                 className="mb-4 flex items-center gap-4 rounded-lg bg-white/10 p-4 last:mb-0"
               >
-                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#e7bd65] text-[#202624]">
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#D8F275] text-[#12201C]">
                   <Icon size={21} />
                 </span>
                 <p className="font-black">{label as string}</p>

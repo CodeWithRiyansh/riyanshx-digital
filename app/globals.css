@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f1e8;
-  --foreground: #202624;
+  --background: #F7F8F2;
+  --foreground: #12201C;
+  --brand-coral: #FF6B35;
+  --brand-lime: #D8F275;
+  --brand-teal: #0E7C66;
+  --brand-ink: #12201C;
 }
 
 @theme inline {
@@ -15,6 +19,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  background-image:
+    radial-gradient(circle at 12% 0%, rgba(216, 242, 117, 0.22), transparent 28rem),
+    radial-gradient(circle at 88% 8%, rgba(255, 107, 53, 0.14), transparent 26rem),
+    linear-gradient(180deg, #f7f8f2 0%, #eef3e8 100%);
+  min-height: 100vh;
 }
 
 html {
@@ -22,8 +31,8 @@ html {
 }
 
 ::selection {
-  background: #e7bd65;
-  color: #202624;
+  background: var(--brand-lime);
+  color: var(--brand-ink);
 }
 
 button,
@@ -36,4 +45,9 @@ textarea {
 img {
   max-width: 100%;
   height: auto;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand-lime);
+  outline-offset: 3px;
 }

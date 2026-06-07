@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen bg-[#f6f1e8] px-5 py-8 text-[#202624] md:px-8">
+    <main className="min-h-screen bg-[#F7F8F2] px-5 py-8 text-[#12201C] md:px-8">
       <article className="mx-auto max-w-3xl">
-        <Link href="/" className="text-sm font-black text-[#c4552d]">
+        <Link href="/" className="text-sm font-black text-[#FF6B35]">
           Back to home
         </Link>
         <h1 className="mt-12 text-5xl font-black">Privacy Policy</h1>
-        <div className="mt-8 space-y-6 leading-8 text-[#53605d]">
+        <div className="mt-8 space-y-6 leading-8 text-[#586A64]">
           <p>
             {site.name} collects information submitted through website forms,
             including name, phone number, business type, budget range, and
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <p>
             To request deletion or correction of your information, contact us at{" "}
-            <a className="font-black text-[#c4552d]" href={`mailto:${site.email}`}>
+            <a className="font-black text-[#FF6B35]" href={`mailto:${site.email}`}>
               {site.email}
             </a>
             .

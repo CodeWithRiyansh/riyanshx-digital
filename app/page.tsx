@@ -336,18 +336,18 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#f6f1e8] text-[#202624]">
-      <nav className="sticky top-0 z-50 border-b border-[#202624]/10 bg-[#f6f1e8]/90 backdrop-blur-xl">
+    <main className="min-h-screen overflow-hidden bg-transparent text-[#12201C]">
+      <nav className="sticky top-0 z-50 border-b border-[#12201C]/10 bg-[#F7F8F2]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
           <a href="#" className="flex items-center gap-3" aria-label="RiyanshX Digital home">
-            <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#202624] text-sm font-black text-[#f6f1e8]">
+            <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#12201C] text-sm font-black text-[#F7F8F2]">
               RX
             </span>
             <span>
               <span className="block text-lg font-black leading-none">
                 RiyanshX
               </span>
-              <span className="mt-1 block text-xs font-bold uppercase tracking-[0.18em] text-[#697370]">
+              <span className="mt-1 block text-xs font-bold uppercase tracking-[0.18em] text-[#6E7F78]">
                 Digital
               </span>
             </span>
@@ -358,7 +358,7 @@ export default function Home() {
               <a
                 key={item.label}
                 href={item.href}
-                className="transition hover:text-[#c4552d]"
+                className="transition hover:text-[#FF6B35]"
               >
                 {item.label}
               </a>
@@ -368,7 +368,7 @@ export default function Home() {
           <button
             type="button"
             onClick={() => scrollToSection("#contact")}
-            className="hidden items-center gap-2 rounded-lg bg-[#c4552d] px-5 py-3 text-sm font-black text-white shadow-[0_14px_28px_rgba(196,85,45,0.22)] transition hover:bg-[#a94422] md:flex"
+            className="hidden items-center gap-2 rounded-lg bg-[#FF6B35] px-5 py-3 text-sm font-black text-white shadow-[0_14px_28px_rgba(255,107,53,0.26)] transition hover:bg-[#E85622] md:flex"
           >
             Get My Audit
             <ArrowRight size={17} />
@@ -378,14 +378,14 @@ export default function Home() {
             type="button"
             aria-label="Open menu"
             onClick={() => setMenuOpen((value) => !value)}
-            className="grid h-10 w-10 place-items-center rounded-lg border border-[#202624]/15 md:hidden"
+            className="grid h-10 w-10 place-items-center rounded-lg border border-[#12201C]/15 md:hidden"
           >
             {menuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {menuOpen && (
-          <div className="border-t border-[#202624]/10 bg-[#f6f1e8] px-5 py-4 md:hidden">
+          <div className="border-t border-[#12201C]/10 bg-[#F7F8F2] px-5 py-4 md:hidden">
             <div className="flex flex-col gap-2 text-sm font-black">
               {navItems.map((item) => (
                 <a
@@ -403,20 +403,21 @@ export default function Home() {
       </nav>
 
       <section className="relative">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(216,242,117,0.24),transparent_28rem),radial-gradient(circle_at_82%_12%,rgba(255,107,53,0.16),transparent_24rem)]" />
         <div className="mx-auto grid min-h-[calc(100vh-77px)] max-w-7xl items-center gap-12 px-5 py-14 md:grid-cols-[1.04fr_0.96fr] md:px-8 md:py-20">
           <motion.div
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="inline-flex items-center gap-2 rounded-lg border border-[#202624]/15 bg-white/70 px-3 py-2 text-sm font-black">
-              <Sparkles size={16} className="text-[#c4552d]" />
+            <div className="inline-flex items-center gap-2 rounded-lg border border-[#12201C]/15 bg-white/70 px-3 py-2 text-sm font-black">
+              <Sparkles size={16} className="text-[#FF6B35]" />
               Predictable lead systems for service businesses
             </div>
             <h1 className="mt-7 max-w-5xl text-5xl font-black leading-[0.96] md:text-7xl">
               We build your next 30 days of qualified leads.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#53605d]">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#586A64]">
               RiyanshX Digital combines conversion websites, performance ads,
               CRM automation, and weekly optimization so local brands can turn
               attention into booked calls.
@@ -426,7 +427,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => scrollToSection("#contact")}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#202624] px-6 py-4 font-black text-white transition hover:bg-[#343d3a]"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#12201C] px-6 py-4 font-black text-white transition hover:bg-[#1E342F]"
               >
                 Book Free Growth Audit
                 <ArrowRight size={18} />
@@ -434,7 +435,7 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => scrollToSection("#calculator")}
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#202624]/15 bg-white/70 px-6 py-4 font-black transition hover:bg-white"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#12201C]/15 bg-white/70 px-6 py-4 font-black transition hover:bg-white"
               >
                 Calculate ROI
                 <CircleDollarSign size={18} />
@@ -445,10 +446,10 @@ export default function Home() {
               {stats.map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-lg border border-[#202624]/10 bg-white/65 p-4"
+                  className="rounded-lg border border-[#12201C]/10 bg-white/65 p-4"
                 >
                   <p className="text-3xl font-black">{item.value}</p>
-                  <p className="mt-1 text-sm font-semibold text-[#697370]">
+                  <p className="mt-1 text-sm font-semibold text-[#6E7F78]">
                     {item.label}
                   </p>
                 </div>
@@ -460,29 +461,29 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.12 }}
-            className="relative overflow-hidden rounded-lg border border-[#202624]/12 bg-[#26302f] p-5 text-white shadow-2xl"
+            className="relative overflow-hidden rounded-lg border border-[#12201C]/12 bg-[#17352F] p-5 text-white shadow-2xl"
           >
-            <div className="absolute inset-x-0 top-0 h-28 bg-[#e7bd65]" />
+            <div className="absolute inset-x-0 top-0 h-28 bg-[#D8F275]" />
             <div className="relative">
               <div className="flex items-center justify-between">
-                <p className="text-sm font-black text-[#26302f]">
+                <p className="text-sm font-black text-[#17352F]">
                   Growth Command Center
                 </p>
-                <span className="inline-flex items-center gap-2 rounded-md bg-[#26302f] px-3 py-1 text-xs font-black">
+                <span className="inline-flex items-center gap-2 rounded-md bg-[#17352F] px-3 py-1 text-xs font-black">
                   <span className="h-2 w-2 rounded-full bg-[#66e39a]" />
                   Live
                 </span>
               </div>
 
               <div className="mt-16 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-lg bg-white p-5 text-[#202624]">
-                  <p className="text-sm font-black text-[#697370]">
+                <div className="rounded-lg bg-white p-5 text-[#12201C]">
+                  <p className="text-sm font-black text-[#6E7F78]">
                     Projected leads
                   </p>
                   <h3 className="mt-3 text-5xl font-black">
                     {roi.projectedLeads}
                   </h3>
-                  <p className="mt-2 text-sm font-semibold text-[#697370]">
+                  <p className="mt-2 text-sm font-semibold text-[#6E7F78]">
                     after funnel and ads optimization
                   </p>
                 </div>
@@ -503,7 +504,7 @@ export default function Home() {
                         </div>
                         <div className="h-2 rounded-full bg-white/15">
                           <div
-                            className="h-2 rounded-full bg-[#e7bd65]"
+                            className="h-2 rounded-full bg-[#D8F275]"
                             style={{ width: `${value}%` }}
                           />
                         </div>
@@ -513,7 +514,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="mt-4 rounded-lg border border-white/10 bg-[#151b1a] p-5">
+              <div className="mt-4 rounded-lg border border-white/10 bg-[#0B1714] p-5">
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <p className="text-sm font-black text-white/60">
@@ -523,7 +524,7 @@ export default function Home() {
                       {leadCount} leads/month
                     </p>
                   </div>
-                  <TrendingUp className="text-[#e7bd65]" size={34} />
+                  <TrendingUp className="text-[#D8F275]" size={34} />
                 </div>
                 <input
                   aria-label="Current monthly leads"
@@ -532,7 +533,7 @@ export default function Home() {
                   max="300"
                   value={leadCount}
                   onChange={(event) => setLeadCount(Number(event.target.value))}
-                  className="mt-7 w-full accent-[#e7bd65]"
+                  className="mt-7 w-full accent-[#D8F275]"
                 />
               </div>
 
@@ -541,7 +542,7 @@ export default function Home() {
                   <p className="text-sm font-black text-white/60">
                     Extra revenue
                   </p>
-                  <p className="mt-2 text-2xl font-black text-[#e7bd65]">
+                  <p className="mt-2 text-2xl font-black text-[#D8F275]">
                     {formatCurrency(roi.extraRevenue)}
                   </p>
                 </div>
@@ -549,7 +550,7 @@ export default function Home() {
                   <p className="text-sm font-black text-white/60">
                     Est. ROI
                   </p>
-                  <p className="mt-2 text-2xl font-black text-[#e7bd65]">
+                  <p className="mt-2 text-2xl font-black text-[#D8F275]">
                     {roi.estimatedRoi}x
                   </p>
                 </div>
@@ -559,16 +560,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-[#202624]/10 bg-white px-5 py-8 md:px-8">
+      <section className="border-y border-[#12201C]/10 bg-white px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#697370]">
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#6E7F78]">
             Built for
           </p>
           <div className="flex flex-wrap gap-3">
             {clientTypes.map((type) => (
               <span
                 key={type}
-                className="rounded-lg border border-[#202624]/10 bg-[#f7f7f4] px-4 py-2 text-sm font-black"
+                className="rounded-lg border border-[#12201C]/10 bg-[#EEF3E8] px-4 py-2 text-sm font-black"
               >
                 {type}
               </span>
@@ -581,13 +582,13 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <Reveal className="grid gap-10 md:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="text-sm font-black uppercase text-[#c4552d]">
+              <p className="text-sm font-black uppercase text-[#FF6B35]">
                 Service tabs
               </p>
               <h2 className="mt-4 text-4xl font-black md:text-6xl">
                 Everything needed to turn traffic into calls.
               </h2>
-              <p className="mt-5 max-w-xl leading-8 text-[#53605d]">
+              <p className="mt-5 max-w-xl leading-8 text-[#586A64]">
                 Pick the area that hurts most. Each system includes strategy,
                 execution, tracking, and improvement actions.
               </p>
@@ -604,19 +605,19 @@ export default function Home() {
                     onClick={() => setActiveService(index)}
                     className={`rounded-lg border p-5 text-left transition ${
                       activeService === index
-                        ? "border-[#c4552d] bg-[#fff7ed]"
-                        : "border-[#202624]/10 bg-[#f7f7f4] hover:bg-[#fff7ed]"
+                        ? "border-[#FF6B35] bg-[#FFF5EE]"
+                        : "border-[#12201C]/10 bg-[#EEF3E8] hover:bg-[#FFF5EE]"
                     }`}
                   >
                     <div className="flex items-start gap-4">
-                      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-[#202624] text-white">
+                      <span className="grid h-12 w-12 shrink-0 place-items-center rounded-lg bg-[#12201C] text-white">
                         <Icon size={22} />
                       </span>
                       <span>
                         <span className="block text-xl font-black">
                           {service.title}
                         </span>
-                        <span className="mt-2 block leading-7 text-[#53605d]">
+                        <span className="mt-2 block leading-7 text-[#586A64]">
                           {service.copy}
                         </span>
                       </span>
@@ -627,10 +628,10 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <Reveal className="mt-10 rounded-lg bg-[#202624] p-6 text-white md:p-8">
+          <Reveal className="mt-10 rounded-lg bg-[#12201C] p-6 text-white md:p-8">
             <div className="grid gap-8 md:grid-cols-[0.9fr_1.1fr]">
               <div>
-                <span className="grid h-14 w-14 place-items-center rounded-lg bg-[#e7bd65] text-[#202624]">
+                <span className="grid h-14 w-14 place-items-center rounded-lg bg-[#D8F275] text-[#12201C]">
                   <ActiveIcon size={25} />
                 </span>
                 <h3 className="mt-5 text-3xl font-black">{active.headline}</h3>
@@ -652,7 +653,7 @@ export default function Home() {
               </div>
 
               <div className="rounded-lg border border-white/10 bg-white/10 p-5">
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#e7bd65]">
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#D8F275]">
                   Deliverables
                 </p>
                 <div className="mt-5 grid gap-3">
@@ -661,7 +662,7 @@ export default function Home() {
                       key={item}
                       className="flex items-center gap-3 rounded-lg bg-white/10 p-3"
                     >
-                      <span className="grid h-7 w-7 place-items-center rounded-md bg-[#e7bd65] text-[#202624]">
+                      <span className="grid h-7 w-7 place-items-center rounded-md bg-[#D8F275] text-[#12201C]">
                         <Check size={16} />
                       </span>
                       <p className="font-bold">{item}</p>
@@ -678,7 +679,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <Reveal className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
-              <p className="text-sm font-black uppercase text-[#c4552d]">
+              <p className="text-sm font-black uppercase text-[#FF6B35]">
                 Process
               </p>
               <h2 className="mt-4 max-w-3xl text-4xl font-black md:text-6xl">
@@ -688,7 +689,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => scrollToSection("#contact")}
-              className="inline-flex w-fit items-center gap-2 rounded-lg bg-[#202624] px-5 py-3 font-black text-white transition hover:bg-[#343d3a]"
+              className="inline-flex w-fit items-center gap-2 rounded-lg bg-[#12201C] px-5 py-3 font-black text-white transition hover:bg-[#1E342F]"
             >
               See Your Growth Plan
               <ArrowRight size={18} />
@@ -703,20 +704,20 @@ export default function Home() {
                 <Reveal
                   key={step.title}
                   delay={index * 0.06}
-                  className="rounded-lg border border-[#202624]/10 bg-white p-6"
+                  className="rounded-lg border border-[#12201C]/10 bg-white p-6"
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <span className="grid h-12 w-12 place-items-center rounded-lg bg-[#202624] text-white">
+                    <span className="grid h-12 w-12 place-items-center rounded-lg bg-[#12201C] text-white">
                       <Icon size={22} />
                     </span>
-                    <span className="text-sm font-black text-[#c4552d]">
+                    <span className="text-sm font-black text-[#FF6B35]">
                       0{index + 1}
                     </span>
                   </div>
                   <h3 className="mt-6 text-2xl font-black">{step.title}</h3>
-                  <p className="mt-3 leading-7 text-[#53605d]">{step.copy}</p>
-                  <div className="mt-6 rounded-lg bg-[#fff0db] p-3">
-                    <p className="text-xs font-black uppercase tracking-[0.14em] text-[#9a5a1f]">
+                  <p className="mt-3 leading-7 text-[#586A64]">{step.copy}</p>
+                  <div className="mt-6 rounded-lg bg-[#E9FFE6] p-3">
+                    <p className="text-xs font-black uppercase tracking-[0.14em] text-[#267A63]">
                       Output
                     </p>
                     <p className="mt-1 font-black">{step.output}</p>
@@ -728,10 +729,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="calculator" className="bg-[#26302f] px-5 py-20 text-white md:px-8">
+      <section id="calculator" className="bg-[#17352F] px-5 py-20 text-white md:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.85fr_1.15fr]">
           <Reveal>
-            <p className="text-sm font-black uppercase text-[#e7bd65]">
+            <p className="text-sm font-black uppercase text-[#D8F275]">
               ROI calculator
             </p>
             <h2 className="mt-4 text-4xl font-black md:text-6xl">
@@ -756,7 +757,7 @@ export default function Home() {
                   max="300"
                   value={leadCount}
                   onChange={(event) => setLeadCount(Number(event.target.value))}
-                  className="mt-3 w-full accent-[#e7bd65]"
+                  className="mt-3 w-full accent-[#D8F275]"
                 />
               </label>
               <label>
@@ -769,7 +770,7 @@ export default function Home() {
                   max="45"
                   value={closingRate}
                   onChange={(event) => setClosingRate(Number(event.target.value))}
-                  className="mt-3 w-full accent-[#e7bd65]"
+                  className="mt-3 w-full accent-[#D8F275]"
                 />
               </label>
               <label>
@@ -781,7 +782,7 @@ export default function Home() {
                   min="1000"
                   value={saleValue}
                   onChange={(event) => setSaleValue(Number(event.target.value))}
-                  className="mt-3 h-12 w-full rounded-lg border border-white/10 bg-[#151b1a] px-4 font-bold outline-none focus:border-[#e7bd65]"
+                  className="mt-3 h-12 w-full rounded-lg border border-white/10 bg-[#0B1714] px-4 font-bold outline-none focus:border-[#D8F275]"
                 />
               </label>
               <label>
@@ -793,7 +794,7 @@ export default function Home() {
                   min="0"
                   value={adBudget}
                   onChange={(event) => setAdBudget(Number(event.target.value))}
-                  className="mt-3 h-12 w-full rounded-lg border border-white/10 bg-[#151b1a] px-4 font-bold outline-none focus:border-[#e7bd65]"
+                  className="mt-3 h-12 w-full rounded-lg border border-white/10 bg-[#0B1714] px-4 font-bold outline-none focus:border-[#D8F275]"
                 />
               </label>
             </div>
@@ -805,14 +806,14 @@ export default function Home() {
                 ["Extra customers", roi.extraCustomers],
                 ["Est. ROI", `${roi.estimatedRoi}x`],
               ].map(([label, value]) => (
-                <div key={label} className="rounded-lg bg-white p-4 text-[#202624]">
-                  <p className="text-sm font-black text-[#697370]">{label}</p>
+                <div key={label} className="rounded-lg bg-white p-4 text-[#12201C]">
+                  <p className="text-sm font-black text-[#6E7F78]">{label}</p>
                   <p className="mt-2 text-3xl font-black">{value}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-5 rounded-lg bg-[#e7bd65] p-5 text-[#202624]">
+            <div className="mt-5 rounded-lg bg-[#D8F275] p-5 text-[#12201C]">
               <p className="text-sm font-black uppercase tracking-[0.14em]">
                 Estimated extra monthly revenue
               </p>
@@ -828,14 +829,14 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <Reveal className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <p className="text-sm font-black uppercase text-[#c4552d]">
+              <p className="text-sm font-black uppercase text-[#FF6B35]">
                 Results
               </p>
               <h2 className="mt-4 max-w-3xl text-4xl font-black md:text-6xl">
                 Proof that reads like a growth report.
               </h2>
             </div>
-            <p className="max-w-md leading-7 text-[#53605d]">
+            <p className="max-w-md leading-7 text-[#586A64]">
               Case studies focus on the metrics clients actually care about:
               CPL, booking rate, lead quality, and team speed.
             </p>
@@ -846,34 +847,34 @@ export default function Home() {
               <Reveal
                 key={item.brand}
                 delay={index * 0.06}
-                className="rounded-lg border border-[#202624]/10 bg-white p-6"
+                className="rounded-lg border border-[#12201C]/10 bg-white p-6"
               >
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <p className="text-sm font-black text-[#c4552d]">
+                    <p className="text-sm font-black text-[#FF6B35]">
                       {item.category}
                     </p>
                     <h3 className="mt-1 text-xl font-black">{item.brand}</h3>
                   </div>
-                  <ShieldCheck className="text-[#c4552d]" size={25} />
+                  <ShieldCheck className="text-[#FF6B35]" size={25} />
                 </div>
                 <p className="mt-8 text-6xl font-black">{item.result}</p>
-                <p className="mt-2 font-bold text-[#53605d]">{item.metric}</p>
+                <p className="mt-2 font-bold text-[#586A64]">{item.metric}</p>
                 <div className="mt-7 grid grid-cols-2 gap-3 text-sm">
-                  <div className="rounded-lg bg-[#f2f0eb] p-3">
-                    <p className="font-black text-[#697370]">Before</p>
+                  <div className="rounded-lg bg-[#E7EEE8] p-3">
+                    <p className="font-black text-[#6E7F78]">Before</p>
                     <p className="mt-1 font-black">{item.before}</p>
                   </div>
-                  <div className="rounded-lg bg-[#fff0db] p-3">
-                    <p className="font-black text-[#9a5a1f]">After</p>
+                  <div className="rounded-lg bg-[#E9FFE6] p-3">
+                    <p className="font-black text-[#267A63]">After</p>
                     <p className="mt-1 font-black">{item.after}</p>
                   </div>
                 </div>
                 <div className="mt-5 space-y-2">
                   {item.timeline.map((step) => (
                     <div key={step} className="flex items-center gap-3">
-                      <span className="h-2 w-2 rounded-full bg-[#c4552d]" />
-                      <p className="text-sm font-bold text-[#53605d]">{step}</p>
+                      <span className="h-2 w-2 rounded-full bg-[#FF6B35]" />
+                      <p className="text-sm font-bold text-[#586A64]">{step}</p>
                     </div>
                   ))}
                 </div>
@@ -886,9 +887,9 @@ export default function Home() {
               <Reveal
                 key={item.name}
                 delay={index * 0.06}
-                className="rounded-lg bg-[#202624] p-6 text-white"
+                className="rounded-lg bg-[#12201C] p-6 text-white"
               >
-                <div className="flex gap-1 text-[#e7bd65]">
+                <div className="flex gap-1 text-[#D8F275]">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
                     <Star key={starIndex} size={17} fill="currentColor" />
                   ))}
@@ -915,9 +916,9 @@ export default function Home() {
               return (
                 <div
                   key={badge.label}
-                  className="flex items-center gap-3 rounded-lg border border-[#202624]/10 bg-[#f7f7f4] p-4"
+                  className="flex items-center gap-3 rounded-lg border border-[#12201C]/10 bg-[#EEF3E8] p-4"
                 >
-                  <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#fff0db] text-[#c4552d]">
+                  <span className="grid h-11 w-11 place-items-center rounded-lg bg-[#E9FFE6] text-[#FF6B35]">
                     <Icon size={21} />
                   </span>
                   <p className="font-black">{badge.label}</p>
@@ -928,10 +929,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="pricing" className="bg-[#26302f] px-5 py-20 text-white md:px-8">
+      <section id="pricing" className="bg-[#17352F] px-5 py-20 text-white md:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal className="text-center">
-            <p className="text-sm font-black uppercase text-[#e7bd65]">
+            <p className="text-sm font-black uppercase text-[#D8F275]">
               Pricing
             </p>
             <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-black md:text-6xl">
@@ -946,7 +947,7 @@ export default function Home() {
                 delay={index * 0.06}
                 className={`rounded-lg border p-6 ${
                   plan.featured
-                    ? "border-[#e7bd65] bg-[#e7bd65] text-[#202624]"
+                    ? "border-[#D8F275] bg-[#D8F275] text-[#12201C]"
                     : "border-white/10 bg-white/10"
                 }`}
               >
@@ -955,7 +956,7 @@ export default function Home() {
                     <h3 className="text-2xl font-black">{plan.name}</h3>
                     <p
                       className={`mt-3 leading-7 ${
-                        plan.featured ? "text-[#3d4745]" : "text-white/68"
+                        plan.featured ? "text-[#2C4740]" : "text-white/68"
                       }`}
                     >
                       {plan.line}
@@ -967,7 +968,7 @@ export default function Home() {
                 <p className="mt-8 text-5xl font-black">{plan.price}</p>
                 <p
                   className={`mt-2 text-sm font-black ${
-                    plan.featured ? "text-[#3d4745]" : "text-white/55"
+                    plan.featured ? "text-[#2C4740]" : "text-white/55"
                   }`}
                 >
                   per month
@@ -979,8 +980,8 @@ export default function Home() {
                       <span
                         className={`grid h-6 w-6 shrink-0 place-items-center rounded-md ${
                           plan.featured
-                            ? "bg-[#202624] text-white"
-                            : "bg-white/12 text-[#e7bd65]"
+                            ? "bg-[#12201C] text-white"
+                            : "bg-white/12 text-[#D8F275]"
                         }`}
                       >
                         <Check size={15} />
@@ -995,8 +996,8 @@ export default function Home() {
                   onClick={() => scrollToSection("#contact")}
                   className={`mt-8 flex w-full items-center justify-center gap-2 rounded-lg px-5 py-4 font-black transition ${
                     plan.featured
-                      ? "bg-[#202624] text-white hover:bg-[#343d3a]"
-                      : "bg-white text-[#202624] hover:bg-[#f6f1e8]"
+                      ? "bg-[#12201C] text-white hover:bg-[#1E342F]"
+                      : "bg-white text-[#12201C] hover:bg-[#F7F8F2]"
                   }`}
                 >
                   {plan.cta}
@@ -1011,20 +1012,20 @@ export default function Home() {
       <section className="px-5 py-20 md:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.9fr_1.1fr] md:items-center">
           <Reveal>
-            <p className="text-sm font-black uppercase text-[#c4552d]">
+            <p className="text-sm font-black uppercase text-[#FF6B35]">
               Lead magnet
             </p>
             <h2 className="mt-4 text-4xl font-black md:text-6xl">
               Download the checklist we use before running ads.
             </h2>
-            <p className="mt-5 max-w-xl leading-8 text-[#53605d]">
+            <p className="mt-5 max-w-xl leading-8 text-[#586A64]">
               Use this quick audit to fix the biggest website conversion leaks
               before spending more on traffic.
             </p>
             <a
               href="/growth-audit-checklist.txt"
               download
-              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#202624] px-6 py-4 font-black text-white transition hover:bg-[#343d3a]"
+              className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#12201C] px-6 py-4 font-black text-white transition hover:bg-[#1E342F]"
             >
               Download Free Checklist
               <ArrowRight size={18} />
@@ -1036,7 +1037,7 @@ export default function Home() {
               alt="10 website fixes to increase leads checklist"
               width={900}
               height={620}
-              className="rounded-lg border border-[#202624]/10 shadow-xl"
+              className="rounded-lg border border-[#12201C]/10 shadow-xl"
             />
           </Reveal>
         </div>
@@ -1045,13 +1046,13 @@ export default function Home() {
       <section id="contact" className="bg-white px-5 py-20 md:px-8">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
-            <p className="text-sm font-black uppercase text-[#c4552d]">
+            <p className="text-sm font-black uppercase text-[#FF6B35]">
               Free audit
             </p>
             <h2 className="mt-4 text-4xl font-black md:text-6xl">
               Get a practical growth audit in one call.
             </h2>
-            <p className="mt-5 max-w-xl leading-8 text-[#53605d]">
+            <p className="mt-5 max-w-xl leading-8 text-[#586A64]">
               Share your business stage, ad budget, current lead flow, and
               biggest bottleneck. We will map the fastest route across website,
               ads, SEO, and automation.
@@ -1065,7 +1066,7 @@ export default function Home() {
                 "Estimated lead and revenue upside",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-[#fff0db] text-[#c4552d]">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-[#E9FFE6] text-[#FF6B35]">
                     <Check size={17} />
                   </span>
                   <p className="font-black">{item}</p>
@@ -1073,14 +1074,14 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="mt-8 grid gap-3 text-sm font-bold text-[#53605d]">
-              <a href={`mailto:${site.email}`} className="flex items-center gap-3 hover:text-[#c4552d]">
+            <div className="mt-8 grid gap-3 text-sm font-bold text-[#586A64]">
+              <a href={`mailto:${site.email}`} className="flex items-center gap-3 hover:text-[#FF6B35]">
                 <Mail size={18} />
                 {site.email}
               </a>
              <a
   href={`https://wa.me/${site.whatsappNumber}`}
-  className="flex items-center gap-3 hover:text-[#c4552d]"
+  className="flex items-center gap-3 hover:text-[#FF6B35]"
 >
   <Phone size={18} />
   {site.phoneDisplay}
@@ -1091,7 +1092,7 @@ export default function Home() {
           <Reveal>
             <form
               onSubmit={handleAuditSubmit}
-              className="rounded-lg border border-[#202624]/10 bg-[#f7f7f4] p-5 md:p-7"
+              className="rounded-lg border border-[#12201C]/10 bg-[#EEF3E8] p-5 md:p-7"
             >
               <div className="grid gap-4 md:grid-cols-2">
                 <label className="block">
@@ -1100,7 +1101,7 @@ export default function Home() {
                     name="name"
                     required
                     placeholder="Your name"
-                    className="mt-2 h-12 w-full rounded-lg border border-[#202624]/12 bg-white px-4 outline-none transition focus:border-[#c4552d]"
+                    className="mt-2 h-12 w-full rounded-lg border border-[#12201C]/12 bg-white px-4 outline-none transition focus:border-[#FF6B35]"
                   />
                 </label>
                 <label className="block">
@@ -1109,7 +1110,7 @@ export default function Home() {
                     name="phone"
                     required
                     placeholder="+91"
-                    className="mt-2 h-12 w-full rounded-lg border border-[#202624]/12 bg-white px-4 outline-none transition focus:border-[#c4552d]"
+                    className="mt-2 h-12 w-full rounded-lg border border-[#12201C]/12 bg-white px-4 outline-none transition focus:border-[#FF6B35]"
                   />
                 </label>
               </div>
@@ -1119,7 +1120,7 @@ export default function Home() {
                   <span className="text-sm font-black">Business Type</span>
                   <select
                     name="business"
-                    className="mt-2 h-12 w-full rounded-lg border border-[#202624]/12 bg-white px-4 outline-none transition focus:border-[#c4552d]"
+                    className="mt-2 h-12 w-full rounded-lg border border-[#12201C]/12 bg-white px-4 outline-none transition focus:border-[#FF6B35]"
                   >
                     <option>Local business</option>
                     <option>Clinic or healthcare</option>
@@ -1133,7 +1134,7 @@ export default function Home() {
                   <span className="text-sm font-black">Monthly Ad Budget</span>
                   <select
                     name="budget"
-                    className="mt-2 h-12 w-full rounded-lg border border-[#202624]/12 bg-white px-4 outline-none transition focus:border-[#c4552d]"
+                    className="mt-2 h-12 w-full rounded-lg border border-[#12201C]/12 bg-white px-4 outline-none transition focus:border-[#FF6B35]"
                   >
                     <option>Not running ads</option>
                     <option>Under Rs 25,000</option>
@@ -1152,14 +1153,14 @@ export default function Home() {
                     type="number"
                     min="0"
                     placeholder="80"
-                    className="mt-2 h-12 w-full rounded-lg border border-[#202624]/12 bg-white px-4 outline-none transition focus:border-[#c4552d]"
+                    className="mt-2 h-12 w-full rounded-lg border border-[#12201C]/12 bg-white px-4 outline-none transition focus:border-[#FF6B35]"
                   />
                 </label>
                 <label className="block">
                   <span className="text-sm font-black">Callback Time</span>
                   <select
                     name="callback"
-                    className="mt-2 h-12 w-full rounded-lg border border-[#202624]/12 bg-white px-4 outline-none transition focus:border-[#c4552d]"
+                    className="mt-2 h-12 w-full rounded-lg border border-[#12201C]/12 bg-white px-4 outline-none transition focus:border-[#FF6B35]"
                   >
                     <option>Today</option>
                     <option>Tomorrow</option>
@@ -1175,20 +1176,20 @@ export default function Home() {
                   name="problem"
                   rows={5}
                   placeholder="Low leads, bad CPL, weak website conversion, missed follow-ups..."
-                  className="mt-2 w-full resize-none rounded-lg border border-[#202624]/12 bg-white px-4 py-3 outline-none transition focus:border-[#c4552d]"
+                  className="mt-2 w-full resize-none rounded-lg border border-[#12201C]/12 bg-white px-4 py-3 outline-none transition focus:border-[#FF6B35]"
                 />
               </label>
 
               <button
                 type="submit"
-                className="mt-5 flex w-full items-center justify-center gap-2 rounded-lg bg-[#c4552d] px-5 py-4 font-black text-white transition hover:bg-[#a94422]"
+                className="mt-5 flex w-full items-center justify-center gap-2 rounded-lg bg-[#FF6B35] px-5 py-4 font-black text-white transition hover:bg-[#E85622]"
               >
                 Send WhatsApp Audit Request
                 <Send size={18} />
               </button>
 
               {formSent && (
-                <p className="mt-4 rounded-lg bg-[#e8f7ee] p-3 text-sm font-black text-[#16633b]">
+                <p className="mt-4 rounded-lg bg-[#E8FFF0] p-3 text-sm font-black text-[#0B6755]">
                   WhatsApp message opened. Send it there to book your audit.
                 </p>
               )}
@@ -1197,28 +1198,28 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-[#202624]/10 bg-[#f6f1e8] px-5 py-8 md:px-8">
+      <footer className="border-t border-[#12201C]/10 bg-[#F7F8F2] px-5 py-8 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 md:flex-row md:items-center">
           <div>
             <p className="text-lg font-black">RiyanshX Digital</p>
-            <p className="mt-1 text-sm font-bold text-[#697370]">
+            <p className="mt-1 text-sm font-bold text-[#6E7F78]">
               Predictable lead systems for ambitious local brands.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4 text-sm font-black text-[#53605d]">
-            <a href="/services" className="hover:text-[#c4552d]">
+          <div className="flex flex-wrap gap-4 text-sm font-black text-[#586A64]">
+            <a href="/services" className="hover:text-[#FF6B35]">
               Services
             </a>
-            <a href="/case-studies" className="hover:text-[#c4552d]">
+            <a href="/case-studies" className="hover:text-[#FF6B35]">
               Case Studies
             </a>
-            <a href="/about" className="hover:text-[#c4552d]">
+            <a href="/about" className="hover:text-[#FF6B35]">
               About
             </a>
-            <a href="/contact" className="hover:text-[#c4552d]">
+            <a href="/contact" className="hover:text-[#FF6B35]">
               Contact
             </a>
-            <a href="/privacy-policy" className="hover:text-[#c4552d]">
+            <a href="/privacy-policy" className="hover:text-[#FF6B35]">
               Privacy
             </a>
           </div>
@@ -1230,13 +1231,13 @@ export default function Home() {
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-lg bg-[#1f8f56] text-white shadow-2xl transition hover:bg-[#157445]"
+        className="fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-lg bg-[#0E7C66] text-white shadow-2xl transition hover:bg-[#0B6755]"
       >
         <PhoneCall size={24} />
       </a>
 
-      <div className="fixed bottom-5 left-5 z-40 hidden rounded-lg border border-[#202624]/10 bg-white/90 px-4 py-3 text-sm font-black text-[#202624] shadow-xl backdrop-blur md:flex md:items-center md:gap-2">
-        <Users size={17} className="text-[#c4552d]" />
+      <div className="fixed bottom-5 left-5 z-40 hidden rounded-lg border border-[#12201C]/10 bg-white/90 px-4 py-3 text-sm font-black text-[#12201C] shadow-xl backdrop-blur md:flex md:items-center md:gap-2">
+        <Users size={17} className="text-[#FF6B35]" />
         Free audit slots open this week
       </div>
     </main>
