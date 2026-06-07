@@ -3,8 +3,8 @@ export const site = {
   domain: "https://riyanshxdigital.com",
   email: "hello@riyanshxdigital.com",
   phoneDisplay: "+91 9540599404",
-  whatsappNumber: "9540599404",
-  tagline: "Predictable lead systems for ambitious local brands.",
+  whatsappNumber: "919540599404",
+  tagline: "Desi market ke liye smart lead systems.",
 };
 
 export const servicePages = [
@@ -93,4 +93,3 @@ export const caseStudyPages = [
     metrics: ["210 demos requested", "Automated lead routing", "Cleaner reporting"],
   },
 ];
-
